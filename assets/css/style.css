@@ -1,0 +1,199 @@
+/* 
+font-family: 'Open Sans', sans-serif;
+font-family: 'Playfair Display', serif;
+font-family: 'Poppins', sans-serif;
+ */
+  /* ============================ */
+ /********* Default CSS **********/
+/*==============================*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    background: #0c0b09;
+    color: #fff;
+}
+/* html{
+    font-size: 62.5%;
+} */
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: "Playfair Display", serif;
+}
+  /* ============================ */
+ /********* Top Bar Top  *********/
+/*==============================*/
+.topbar i{
+    color: #CDA45E;
+}
+.c-change li a{
+    color: #CDA45E;
+}
+  /* ============================ */
+ /********* Nav Bar Top  *********/
+/*==============================*/
+.header{
+    background: rgba(12, 11, 9, 0.6);
+    border-bottom: 1px solid rgba(12, 11, 9, 0.6);
+}
+.logo{
+    color: #fff;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+.logo:hover{
+    color: #CDA45E;
+}
+.nav-link{
+    color: #fff;
+    font-size: 1.2rem;
+}
+.nav-link:hover,
+.nav-link.active{
+    color: #CDA45E;
+}
+.btn1 {
+    border: 0.2rem solid #CDA45E;
+    padding: .8rem 2rem;
+    display: block;
+    text-transform: uppercase;
+    border-radius: 40px;
+    background: transparent;
+    color: #fff;
+}
+.btn1:hover{
+    background: #CDA45E;
+    transition: 1s;
+}
+
+  /* ============================ */
+ /*********   Banner     *********/
+/*==============================*/
+.banner{
+    width: 100%;
+    height: 100vh;
+    background: url(../images/banner-bg.jpg) top center;
+    background-size: cover;
+    position: relative;
+    padding: 0;
+    z-index: 1;
+}
+.banner::after{
+    content: "";
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+}
+.middle h1{
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-size: 48px;
+}
+.middle h1 span{
+    color: #CDA45E;
+}
+.middle h2{
+    font-size: 22px;
+    color: #eee;
+}
+.play-btn{
+    width: 94px;
+    height: 94px;
+    background: radial-gradient(#cda45e 50%, rgba(205, 164, 94, 0.4) 52%);
+    border-radius: 50%;
+    display: block;
+    position: relative;
+    overflow: hidden;
+}
+.play-btn::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 10px solid #fff;
+    transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.play-btn::before{
+    content: "";
+    position: absolute;
+    width: 120px;
+    height: 120px;
+    background: rgba(198, 16, 0, 0);
+    border-radius: 50%;
+    border: 5px solid rgba(205, 164, 94, 0.7);
+    top: -15%;
+    left: -15%;
+    opacity: 1;
+    -webkit-animation-delay: 0s;
+    animation-delay: 0s;
+    -webkit-animation: pulsate-btn 2s;
+    animation: pulsate-btn 2s;
+    -webkit-animation-direction: forwards;
+    animation-direction: forwards;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: steps;
+    animation-timing-function: steps;
+}
+.play-btn:hover::after{
+   border-left: 15px solid #cda45e;
+   transform: scale(20);
+}
+.play-btn:hover::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-40%) translateY(-50%);
+    width: 0;
+    height: 0;
+    border: none;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 15px solid #fff;
+    z-index: 200;
+    -webkit-animation: none;
+    animation: none;
+    border-radius: 0;
+  }
+  
+@-webkit-keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+  }
+  
+  @keyframes pulsate-btn {
+    0% {
+      transform: scale(0.6, 0.6);
+      opacity: 1;
+    }
+    100% {
+      transform: scale(1, 1);
+      opacity: 0;
+    }
+}
