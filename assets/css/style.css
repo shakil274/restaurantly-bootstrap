@@ -56,7 +56,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .nav-link{
     color: #fff;
-    font-size: 1.2rem;
+    font-size: 1rem;
 }
 .nav-link:hover,
 .nav-link.active{
@@ -64,7 +64,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn1 {
     border: 0.2rem solid #CDA45E;
-    padding: .8rem 2rem;
+    padding: .6rem 1.5rem;
     display: block;
     text-transform: uppercase;
     border-radius: 40px;
