@@ -1,0 +1,32 @@
+@media (min-width: 1024px){
+    .banner {
+        background-attachment: fixed;
+    }
+}
+
+@media all and (max-width:990px){
+    .middle.py-5 {
+        text-align: center;
+        padding-top: 110px;
+        padding-bottom: 60px;
+    }
+    .btns.d-flex.pt-4 {
+        justify-content: center;
+    }
+    .col-lg-4.py-5.d-flex.justify-content-center {
+        padding-top: 1rem;
+    }
+    button.btn1 {
+        display: none;
+    }
+}
+@media all and (max-width:768px){
+    .middle h1 {
+        font-size: 30px;
+        padding-bottom: 7px;
+    }
+    .middle h2 {
+        font-size: 20px;
+    }
+}
+
