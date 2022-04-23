@@ -5,6 +5,9 @@
     .about{
         background-attachment: fixed;
     }
+    .events{
+        background-attachment: fixed;
+    }
 }
 
 @media all and (max-width:990px){
