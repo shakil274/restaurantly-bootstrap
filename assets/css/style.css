@@ -89,7 +89,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 .btn1 {
     border: 0.2rem solid #CDA45E;
-    padding: .6rem 1.5rem;
+    padding: .4rem 1.5rem;
     display: block;
     text-transform: uppercase;
     border-radius: 40px;
@@ -587,3 +587,294 @@ h1, h2, h3, h4, h5, h6 {
 .row.swiper.mySwiper-testimonials.swiper-initialized.swiper-horizontal.swiper-pointer-events.swiper-free-mode.swiper-backface-hidden {
     padding-bottom: 70px;
 }
+  /* ============================ */
+ /*********** Gallery  ***********/
+/*==============================*/
+.gallery-item {
+    overflow: hidden;
+   border-right: 3px solid #454035;
+   border-bottom: 3px solid #454035;
+}
+.gallery-item a img{
+    max-width: 100%;
+    height: auto;
+    transition: all ease-in-out 0.4s;
+    padding-right: 0;
+    padding-left: 0;
+}
+.bou>* {
+    padding-right: 0;
+    padding-left: 0;
+}
+.gallery-item a:hover img{
+    transform: scale(1.1);
+}
+  /* ============================ */
+ /************* Chefs  ***********/
+/*==============================*/
+.member {
+    position: relative;
+    text-align: center;
+    margin-bottom: 20px;
+    background: #343a40;
+    overflow: hidden;
+    z-index: 1;
+}
+.member::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: .35;
+}
+
+.chefs .member:hover .member-info{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.8) 20%, rgba(0, 212, 255, 0) 100%);
+    opacity: 1;
+    transition: 0.4s;
+}
+.member img{
+    max-width: 100%;
+    height: auto;
+}
+.shali>* {
+    padding-right: calc(var(--bs-gutter-x) * .5);
+    padding-left: calc(var(--bs-gutter-x) * .5);
+}
+.member .member-info {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: none;
+    transition: .5s;
+    z-index: 1;
+}
+.member:hover .member-info{
+    display: block;
+}
+.member-info-contact h4{
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 2px;
+}
+.member-info-contact span{
+    font-style: italic;
+    font-size: 13px;
+    color: #fff;
+    display: block;
+}
+.member-info-social a i {
+    color: #fff;
+    margin: 18px 12px 0;
+    font-size: 18px;
+    display: inline-block;
+    transition: color 0.3s;
+    margin-bottom: 25px;
+}
+.member-info-social a:hover i{
+    color: #cda45e;
+}
+.member-info:hover .member-info-contact{
+    bottom: 60px;
+}
+.member-info:hover .member-info-social{
+    bottom: 0;
+}
+.member-info-contact{
+    transition: bottom 0.5s;
+}
+.member-info-social{
+    transition: bottom ease-in-out 0.5s;
+}
+  /* ============================ */
+ /*********** Contact  ***********/
+/*==============================*/
+.contact-map iframe {
+    border: 0;
+    width: 100%;
+    height: 350px;
+}
+.information{
+    width: 100%;
+}
+.location,.open-hours,.email,.phone{
+    margin-top: 40px;
+}
+.info-icon {
+    font-size: 20px;
+    color: #fff;
+    float: left;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #cda45e;
+    display: flex;
+    transition: all 0.3s ease-in-out;
+}
+.information h4 {
+    font-size: 18px;
+    font-weight: 500;
+    font-family: "Poppins", sans-serif;
+    padding: 0 0 0 60px;
+    margin-bottom: 5px;
+}
+.information p {
+    color: #bab3a6;
+    font-size: 14px;
+    padding: 0 0 0 60px;
+}
+
+
+
+.con-form {
+    background: transparent;
+    border-radius: 0;
+    border-color: #625b4b;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 400;
+}
+.con-form:focus {
+    background: transparent;
+    border-color: #cda45e;
+    box-shadow: none;
+    color: #fff;
+}
+.con-form::placeholder{
+    color: #a49b89;
+}
+.form-height{
+    height: 44px;
+}
+.con-button {
+    padding: 10px 35px;
+    border: 0;
+    background: #cda45e;
+    border-radius: 50px;
+    color: #fff;
+    transition: .5s;
+}
+.con-button:hover {
+    background: #cda47e;
+    color: #fff;
+}
+  /* ============================ */
+ /***********  Footer  ***********/
+/*==============================*/
+.footer-top {
+    background: #0c0b09;
+    border-top: 1px solid #37332a;
+    border-bottom: 1px solid #28251f;
+    padding: 60px 0 60px 0;
+}
+.footer-info h3 {
+    text-transform: uppercase;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 1;
+    margin: 0 0 20px 0;
+    padding: 2px 0 2px 0;
+}
+.footer-info .adam {
+    margin-bottom: 23px;
+}
+.footer-info .phone {
+    line-height: 27px;
+}
+.footer-info p{
+    font-size: 14px;
+    font-family: 'Playfair Display', serif;
+    color: #fff;
+}
+.footer-info ul li a {
+    color: #fff;
+    float: left;
+    width: 36px;
+    height: 36px;
+    background: #28251f;
+    margin: 4px 6px 0 0;
+    padding: 6px 0;
+    display: inline-block;
+    border-radius: 50%;
+    text-align: center;
+    transition: .5s;
+}
+.footer-info ul li:hover a{
+    background: #cda45e;
+}
+
+.footer-details h4 {
+    color: #fff;
+    font-size: 16px;
+    font-weight: 600;
+    padding-bottom: 12px;
+}
+.footer-details-nav ul li i {
+    color: #cda45e;
+    margin-right: 10px;
+    font-size: 14px;
+}
+.footer-details-nav ul li a {
+    color: #fff;
+    padding: 0 0 14px 0;
+    display: inline-block;
+    font-size: 14px;
+}
+.footer-details-nav ul li a:hover{
+    color: #cda45e;
+    transition: .4s;
+}
+.footer-details p{
+    color: #fff;
+    font-size: 14px;
+}
+.footer-details form {
+    margin-top: 30px;
+    padding: 6px 10px;
+    border: 1px solid #454035;
+    background: #28251f;
+    border-radius: 30px;
+    position: relative;
+}
+.footer-form {
+    width: 67%;
+    border: 0;
+    background: #28251f;
+    color: #fff;
+    padding: 4px 0;
+}
+.footer-form-button {
+    background: #cda45e;
+    padding: 9px 20px;
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 50px;
+}
+/* footer */
+.footer-bottom p {
+    text-align: center;
+    padding-top: 30px;
+    font-size: 14px;
+}
+.footer-bottom p span {
+    font-weight: bolder;
+}
+.footer-bottom .modify {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+.footer-bottom .modify a{
+    color: #cda45e;
+}
+/* footer */
